@@ -39,11 +39,16 @@ public class Array1 {
 //        System.out.println("value of 2 index "+array[2]);
 
 
-        // Accessing values through loop
+        // Accessing values through for loop
         for (int index = 0; index < array.length-1; index++) {
-            System.out.println(index);
+            System.out.println(array[index]);
         }
 
+
+        // Accessing values through for-each loop
+        for (int value: array){
+            System.out.println("for-each value "+value );
+        }
 
     }
 }
