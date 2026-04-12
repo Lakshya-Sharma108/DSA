@@ -28,5 +28,22 @@ public class Array1 {
         // Array Initialization   -> with size and value
         int arr4[] = {10, 15, 30, 50};
 
+
+
+
+//        Accessing the value of array using index
+//            index -> 0   1   2   3   4
+        int[] array = {11, 12, 13, 14, 15};
+
+//        System.out.println("value of 0 index "+array[0]);
+//        System.out.println("value of 2 index "+array[2]);
+
+
+        // Accessing values through loop
+        for (int index = 0; index < array.length-1; index++) {
+            System.out.println(index);
+        }
+
+
     }
 }
