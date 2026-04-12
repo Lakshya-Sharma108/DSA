@@ -57,7 +57,7 @@ public class Array1 {
 //        Taking input for array
         Scanner input = new Scanner(System.in);
         int[] array2 = new int[4];
-        for (int i = 0; i < array2.length; i++) {
+        for (int i = 0; i <= array2.length-1; i++) {
             System.out.print("Enter the value for "+i+" index: ");
             array2[i] = input.nextInt();
         }
