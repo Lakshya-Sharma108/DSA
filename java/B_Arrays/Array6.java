@@ -3,7 +3,7 @@ package B_Arrays;
 public class Array6 {
     public static void main(String[] args) {
         /*
-            2D Arrays:
+            2D Arrays: -- An array of arrays is called 2D array.
 
             How a 2-dimensional array looks like:
 
@@ -19,7 +19,32 @@ public class Array6 {
          */
 
 
+//        Declaration:
+        int[][] matrix;
+        matrix = new int[3][3];
 
+
+//        Initialization:
+        int[][] matrix2 = {
+                            {1, 2, 3},
+                            {5, 6, 7},
+                            {9, 4, 8}
+                          };
+
+//        Accessing value by index:
+//        System.out.println(matrix2[1][1]);
+//        System.out.println(matrix2[0][2]);
+//        System.out.println(matrix2[2][0]);
+
+
+
+//        Printing entire array value
+        for (int i = 0; i <= matrix2.length-1; i++) {
+            for (int j = 0; j <= matrix2[i].length-1; j++) {
+                System.out.print(matrix2[i][j]+" ");
+            }
+            System.out.println();
+        }
 
 
     }
