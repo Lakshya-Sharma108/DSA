@@ -1,5 +1,7 @@
 package B_Arrays;
 
+import java.util.Scanner;
+
 public class Array1 {
     public static void main(String[] args) {
         /*
@@ -25,7 +27,7 @@ public class Array1 {
         arr2 = new char[3];   // allocated the memory of 3 char
 
 
-        // Array Initialization   -> with size and value
+//         Array Initialization   -> with size and value
         int arr4[] = {10, 15, 30, 50};
 
 
@@ -39,16 +41,34 @@ public class Array1 {
 //        System.out.println("value of 2 index "+array[2]);
 
 
-        // Accessing values through for loop
-        for (int index = 0; index < array.length-1; index++) {
-            System.out.println(array[index]);
+//         Accessing values through for loop
+//        for (int index = 0; index < array.length-1; index++) {
+//            System.out.println(array[index]);
+//        }
+
+
+//         Accessing values through for-each loop
+//        for (int value: array){
+//            System.out.println("for-each value "+value );
+//        }
+
+
+
+//        Taking input for array
+        Scanner input = new Scanner(System.in);
+        int[] array2 = new int[4];
+        for (int i = 0; i < array2.length; i++) {
+            System.out.print("Enter the value for "+i+" index: ");
+            array2[i] = input.nextInt();
+        }
+
+        for (int value: array2){
+            System.out.println("input value: "+value);
         }
 
 
-        // Accessing values through for-each loop
-        for (int value: array){
-            System.out.println("for-each value "+value );
-        }
+
+
 
     }
 }
