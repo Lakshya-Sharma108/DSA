@@ -39,13 +39,32 @@ public class Array6 {
 
 
 //        Printing entire array value
-        for (int i = 0; i <= matrix2.length-1; i++) {
-            for (int j = 0; j <= matrix2[i].length-1; j++) {
-                System.out.print(matrix2[i][j]+" ");
+//        for (int i = 0; i <= matrix2.length-1; i++) {
+//            for (int j = 0; j <= matrix2[i].length-1; j++) {
+//                System.out.print(matrix2[i][j]+" ");
+//            }
+//            System.out.println();
+//        }
+
+
+
+
+
+//        Jagged Array ->
+//        An array of arrays where the inner arrays can have different lengths called jagged array.
+
+        int[][] jaggedArr = {
+                                {1, 2, 3},
+                                {5, 6},
+                                {9, 4, 8, 7}
+                            };
+
+        for (int i = 0; i <= jaggedArr.length-1; i++) {
+            for (int j = 0; j <= jaggedArr[i].length-1; j++) {
+                System.out.print(jaggedArr[i][j]+" ");
             }
             System.out.println();
         }
-
 
     }
 }
