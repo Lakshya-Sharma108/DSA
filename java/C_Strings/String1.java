@@ -21,6 +21,27 @@ public class String1 {
 
 
 
+//        Difference b/w literal and new keyword strings:
+//        Here, java uses String Constant Pool (SCP) concept -- go and learn about it
 
+
+//        String with literal takes memory in SCP
+        String literalStr = "Literal String";
+        System.out.println(literalStr);
+
+//        String with new keyword takes memory in heap
+        String newString = "new string";
+        System.out.println(newString);
+
+
+
+
+//        Some useful methods in string
+
+//        To find string length
+        System.out.println("Length of string is: "+newString.length());
+
+//        To access string characters using index
+        System.out.println(newString.charAt(4));
     }
 }
