@@ -18,7 +18,7 @@ public class Practice1 {
         System.out.print("Enter the number: ");
         int num = input.nextInt();
 
-        while (num > 0){
+        while (num !=0){
             int digit = num%10;
             num/=10;
             System.out.print(digit+", ");
