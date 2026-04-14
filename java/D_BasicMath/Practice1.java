@@ -6,7 +6,7 @@ public class Practice1 {
     public static void main(String[] args) {
 
         /*
-            Print each number separately of a number -> 5679 -> 5, 6, 7, 9
+            Print each digit separately of a number -> 5679 -> 5, 6, 7, 9
 
             Approach:
             if we do number%10 -> it gives you the last digit of a number
@@ -20,7 +20,7 @@ public class Practice1 {
 
         while (num !=0){
             int digit = num%10;
-            num/=10;
+            num /= 10;
             System.out.print(digit+", ");
         }
     }
