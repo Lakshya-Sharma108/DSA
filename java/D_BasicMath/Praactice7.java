@@ -1,5 +1,7 @@
 package D_BasicMath;
 
+import java.util.Scanner;
+
 public class Praactice7 {
     public static void main(String[] args) {
 
@@ -9,7 +11,11 @@ public class Praactice7 {
 //        153 = 153   so 153 is a armstrong number
 
 
-        int num = 153;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int num = input.nextInt();
+        int org = num;
+
         int armStrong = 0;
 
         while (num != 0){
@@ -18,6 +24,8 @@ public class Praactice7 {
             num /= 10;
         }
 
-        System.out.println("num: "+armStrong);
+        if (armStrong == org){
+            System.out.println("This is a armstrong number!");
+        }System.out.println("This is not a armstrong number!");
     }
 }
