@@ -2,7 +2,7 @@ package D_BasicMath;
 
 import java.util.Scanner;
 
-public class Praactice7 {
+public class Practice8 {
     public static void main(String[] args) {
 
 //        Armstrong number:
