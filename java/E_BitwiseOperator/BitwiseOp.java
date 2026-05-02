@@ -25,6 +25,26 @@ public class BitwiseOp {
         Most significant bit            Most significant bit
 
 
+        if:
+        Most significant bit is = 0  then the number is +ve
+        Most significant bit is = 1  then the number is -ve
+
+        to check the exact value of a -ve number, we do 2's compliment
+        Example:
+        5 =   00000000 00000000 00000000 00000101
+        ~5 =  11111111 11111111 11111111 11111010   -> here the firs most bit is 1 so the number is -ve
+
+        1's compliment:
+        5 =   00000000 00000000 00000000 00000101
+
+        2's compliment:
+        5 =   00000000 00000000 00000000 00000101
+                                               +1
+        5 =   00000000 00000000 00000000 00000110
+
+        ~5 = -6
+
+
         <> Because Bitwise Operator operates on bit level, it makes them fast
 
 
@@ -41,8 +61,15 @@ public class BitwiseOp {
         & (AND): if both operands true (1), then only output will be true (1) otherwise false
         | (OR): if any one of the operand is true (1), then output will be true (1) otherwise false
         ^ (XOR): if both operands are same (1, 1 or 0, 0), then output will be false otherwise ture
+        ~ (NOT): if operand is true (1) then output will be false (0), if false (0) then true (1)
 
 
     */
+
+
+        System.out.println("AND of 5 and 6: "+(101 & 110));
+        System.out.println("OR of 5 and 6: "+(101 | 110));
+        System.out.println("XOR of 5 and 6: "+(101 ^ 110));
+
     }
 }
