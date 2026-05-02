@@ -63,6 +63,16 @@ public class BitwiseOp {
         ^ (XOR): if both operands are same (1, 1 or 0, 0), then output will be false otherwise ture
         ~ (NOT): if operand is true (1) then output will be false (0), if false (0) then true (1)
 
+        << (Left Shift): it shifts the all bits by the number of times specified or number x 2(power i)
+        e.g.  5 << 1
+              5 = 00000000 00000000 00000000 00000101
+
+        After left shift:
+        5 = 0 00000000 00000000 00000000 0000101 0
+            ^ -> this bit lost                   ^ -> this space filled with 0
+
+        5 << 1 = 10
+
 
     */
 
@@ -70,6 +80,10 @@ public class BitwiseOp {
         System.out.println("AND of 5 and 6: "+(101 & 110));
         System.out.println("OR of 5 and 6: "+(101 | 110));
         System.out.println("XOR of 5 and 6: "+(101 ^ 110));
+
+        System.out.println(~5);
+
+        System.out.println(5 << 1);
 
     }
 }
