@@ -85,5 +85,24 @@ public class BitwiseOp {
 
         System.out.println(5 << 1);
 
+
+
+        // left shift
+        int n = 5;
+        for (int i = 1; i <= 34; i++) {
+            n = n << 1;
+            System.out.println(n);
+            System.out.println();
+        }
+
+
+        // Right shift
+        int j = 100;
+        for (int i = 1; i <= 10; i++) {
+            j = j >> 1;
+            System.out.println(j);
+            System.out.println();
+        }
+
     }
 }
