@@ -17,7 +17,6 @@ public class Practice1 {
             5  -> 0000 0101
             7  -> 0000 0111
 
-
             Analyze:
             Every even number end with 0
             Every odd number end with  1
@@ -28,6 +27,7 @@ public class Practice1 {
             } Odd
 
          */
+
 
 
         int num = 7;
