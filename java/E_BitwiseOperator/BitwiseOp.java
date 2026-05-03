@@ -77,6 +77,7 @@ public class BitwiseOp {
     */
 
 
+
         System.out.println("AND of 5 and 6: "+(101 & 110));
         System.out.println("OR of 5 and 6: "+(101 | 110));
         System.out.println("XOR of 5 and 6: "+(101 ^ 110));
@@ -87,6 +88,7 @@ public class BitwiseOp {
 
 
 
+
         // left shift
         int n = 5;
         for (int i = 1; i <= 34; i++) {
@@ -94,6 +96,7 @@ public class BitwiseOp {
             System.out.println(n);
             System.out.println();
         }
+
 
 
         // Right shift
