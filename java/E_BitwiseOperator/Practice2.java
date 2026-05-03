@@ -19,10 +19,8 @@ public class Practice2 {
             Every power of 2 has only single 1
             Every power of 2 has multiple  1
 
-
-
-
          */
+
 
 
         int num = 10;
