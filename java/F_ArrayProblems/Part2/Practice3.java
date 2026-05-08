@@ -9,9 +9,6 @@ public class Practice3 {
 
         int[] arr = {10, 20, 10, 10, 30, 20, 30, 50, 30, 60, 50};
 
-        int[] arr2 = new int[arr.length];
-
-
 
     }
 }
