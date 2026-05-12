@@ -10,5 +10,35 @@ public class Practice1 {
         // input  -> {0, 1, 1, 0, 1, 0, 0}
         // output -> {0, 0, 0, 0, 1, 1, 1}
 
+        // We are going to use two pointer technique
+
+        int[] arr = {0, 1, 1, 0, 1, 0, 0};
+
+        int start = 0;
+        int end = arr.length-1;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[start] == 1 && arr[end] == 0){
+                // swapping
+                int temp = arr[start];
+                arr[start] = arr[end];
+                arr[end] = temp;
+            }
+
+            if (arr[start] == 0){
+                start++;
+            }
+
+            if (arr[end] == 1){
+                end--;
+            }
+
+            if (start >= end){
+                break;
+            }
+        }
+
+        System.out.println(Arrays.toString(arr));
+
     }
 }
