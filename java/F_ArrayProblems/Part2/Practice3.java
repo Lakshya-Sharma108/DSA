@@ -15,9 +15,6 @@ public class Practice3 {
         int maxFreq = -1;
         int maxFreqKey = -1;
 
-        int minFreq = -1;
-        int minFreqKey = -1;
-
         for (int num : arr){
             frequency.put(num, frequency.getOrDefault(num, 0)+1);
 
@@ -27,9 +24,21 @@ public class Practice3 {
             }
         }
 
-        System.out.println(frequency);
+        int minFreq = Integer.MAX_VALUE;
+        int minFreqKey = -1;
+        for (int key : frequency.keySet()){
+            int currentKey = key;
+            int currentFreq = frequency.get(key);
+
+            if (currentFreq < minFreq){
+                 minFreq = currentFreq;
+                 minFreqKey = currentKey;
+            }
+        }
+
         System.out.println("Max frequency key is: "+maxFreqKey+" With frequency: "+maxFreq);
         System.out.println("Min frequency key is: "+minFreqKey+" With frequency: "+minFreq);
+
 
 
     }
