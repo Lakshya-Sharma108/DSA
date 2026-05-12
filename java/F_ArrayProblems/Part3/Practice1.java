@@ -17,7 +17,7 @@ public class Practice1 {
         int start = 0;
         int end = arr.length-1;
 
-        for (int i = 0; i < arr.length; i++) {
+        while (start < end){
             if (arr[start] == 1 && arr[end] == 0){
                 // swapping
                 int temp = arr[start];
@@ -31,10 +31,6 @@ public class Practice1 {
 
             if (arr[end] == 1){
                 end--;
-            }
-
-            if (start >= end){
-                break;
             }
         }
 
