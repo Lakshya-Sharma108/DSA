@@ -7,7 +7,7 @@ public class Practice2 {
 
          /*
             Given array contains n distinct numbers taken from 0,1,2,....n  find the one that is missing from the array
-            
+
 
             Approach 1: if we do sum of all elements of array and also the sum of all elements within range
 
@@ -31,7 +31,22 @@ public class Practice2 {
 
          */
 
-        System.out.println(15 ^ 10);
+
+
+        int[] arr = {0, 2, 4, 1, 3};
+
+        int xorSum = 0;
+
+        for (int n : arr){
+            xorSum = xorSum ^ n;
+        }
+
+        int n = arr.length;
+        for (int i=0; i<=n; i++){
+            xorSum = xorSum ^ i;
+        }
+
+        System.out.println("The missing element is: "+xorSum);
 
     }
 }
