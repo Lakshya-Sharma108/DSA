@@ -15,7 +15,21 @@ public class Practice4 {
             freq.put(num, freq.getOrDefault(num, 0)+ 1);
         }
 
-        System.out.println(freq);
+
+        int maxFreq = -1;
+        int maxFreqWaliKey = -1;
+
+        for (int key : freq.keySet()){
+            int currentKey = key;
+            int currentKeyFreq = freq.get(key);
+
+            if (currentKeyFreq > maxFreq){
+                maxFreq = currentKeyFreq;
+                maxFreqWaliKey = currentKey;
+            }
+        }
+
+        System.out.println("Key with max frequency: "+maxFreqWaliKey);
         
     }
 }
