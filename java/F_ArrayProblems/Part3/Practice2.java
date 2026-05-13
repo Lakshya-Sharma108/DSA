@@ -32,7 +32,6 @@ public class Practice2 {
          */
 
 
-
         int[] arr = {0, 2, 4, 1, 3};
 
         int xorSum = 0;

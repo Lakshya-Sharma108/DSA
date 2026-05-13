@@ -12,6 +12,8 @@ public class Practice1 {
 
         // We are going to use two pointer technique
 
+
+
         int[] arr = {0, 1, 1, 0, 1, 0, 0};
 
         int start = 0;
@@ -35,6 +37,5 @@ public class Practice1 {
         }
 
         System.out.println(Arrays.toString(arr));
-
     }
 }

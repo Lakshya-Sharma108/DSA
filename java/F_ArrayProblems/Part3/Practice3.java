@@ -7,6 +7,7 @@ public class Practice3 {
 
         // Given an array contains each element twice except one, find that unique one
 
+
         int[] arr = {2, 5, 4, 5, 3, 4, 2, 6, 6};
 
         int xorSum = 0;
@@ -14,7 +15,6 @@ public class Practice3 {
         for (int n : arr){
             xorSum = xorSum ^ n;
         }
-
         System.out.println(xorSum);
     }
 }
