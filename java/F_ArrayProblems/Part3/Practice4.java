@@ -13,6 +13,18 @@ public class Practice4 {
 
         Set<Integer> unionSet = new LinkedHashSet<>();
 
+        for (int num : array1) unionSet.add(num);
+        for (int num : array2) unionSet.add(num);
+
+        System.out.println("Array 1: ");
+        for (int num : array1) System.out.print(num + " ");
+
+        System.out.println("\nArray 2: ");
+        for (int num : array2) System.out.print(num + " ");
+
+        System.out.println("\nUnion: ");
+        for (int num : unionSet) System.out.print(num + " ");
+
 
 
     }
