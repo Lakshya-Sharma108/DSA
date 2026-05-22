@@ -39,10 +39,12 @@ public class Practice5 {
             leftSum[i] = leftSum[i-1] + arr[i];
         }
 
+
         rightSum[n-1] = arr[n-1];
         for (int i = n-2; i >= 0; i--) {
             rightSum[i] = rightSum[i+1] + arr[i];
         }
+
 
         for (int i = 0; i < n; i++) {
             if (leftSum[i] == rightSum[i]){
