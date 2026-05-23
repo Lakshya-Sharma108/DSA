@@ -23,7 +23,6 @@ public class Practice3 {
                 j++;
             }
         }
-
         System.out.println(i+1);
 
     }

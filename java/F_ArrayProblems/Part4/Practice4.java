@@ -7,6 +7,7 @@ public class Practice4 {
 
         // Find first repeating element
 
+
         int[] arr = {2, 3, 6, 7, 6, 3, 8, 9, 7};
 
         HashMap<Integer, Integer> freq = new HashMap<>();

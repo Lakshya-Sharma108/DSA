@@ -34,6 +34,5 @@ public class Practice2 {
         }
 
         System.out.println(output);
-
     }
 }
